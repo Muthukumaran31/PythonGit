@@ -1,0 +1,36 @@
+#1. Using a loop:
+
+def reverse_string(text):
+  reversed_text = ''
+  for char in text:
+    reversed_text = char + reversed_text  # Add each character to the beginning of the new string
+  return reversed_text
+
+# Example usage
+original_string = "Hello World!"
+reversed_string = reverse_string(original_string)
+print(f"Original String: {original_string}")
+print(f"Reversed String: {reversed_string}")
+
+#2. Using slicing:
+
+def reverse_string(text):
+  return text[::-1]  # Slice the string with step -1 to reverse
+
+# Example usage
+original_string = "Hello World!"
+reversed_string = reverse_string(original_string)
+print(f"Original String: {original_string}")
+print(f"Reversed String: {reversed_string}")
+
+
+#3. Using reversed() and join():
+
+def reverse_string(text):
+  return ''.join(reversed(text))  # Join the reversed characters into a string
+
+# Example usage
+original_string = "Hello World!"
+reversed_string = reverse_string(original_string)
+print(f"Original String: {original_string}")
+print(f"Reversed String: {reversed_string}")

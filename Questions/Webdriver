@@ -1,0 +1,19 @@
+#2,Selenium WebDriver Example (Python):
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+# Replace with the path to your ChromeDriver
+driver = webdriver.Chrome("/path/to/chromedriver")
+
+driver.get("https://www.google.com/")
+
+search_box = driver.find_element(By.NAME, "q")
+search_box.send_keys("Selenium WebDriver")
+
+search_button = driver.find_element(By.NAME, "btnK")
+search_button.click()
+
+# Perform further actions on the search results page
+
+driver.quit()
